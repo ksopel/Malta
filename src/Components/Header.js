@@ -1,8 +1,9 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 import logo from '../images/logo.png';
+import {Link} from 'react-router-dom';
+import "../scss/header.scss"
 
 function Header() {
 
@@ -10,11 +11,11 @@ function Header() {
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
             <Container>
                 <Navbar.Brand href="#home"><img alt="logo" width={80} src={logo}/> </Navbar.Brand>
-                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+
                     <Nav>
-                        <Nav.Link href="#Home">Home</Nav.Link>
-                        <Nav.Link href="#About Us">About Us</Nav.Link>
-                        <Nav.Link href="#form">Contact</Nav.Link>
+                        <Link className="styleLink" to="/">Home</Link>
+                        <Link className="styleLink" to="/about">About Us</Link>
+                        <Link className="styleLink" to="/contact">Contact</Link>
                     </Nav>
             </Container>
         </Navbar>

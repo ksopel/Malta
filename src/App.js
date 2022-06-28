@@ -1,22 +1,19 @@
-import "./scss/main.scss"
-import DrawerAppBar from "./Components/Header";
-import Blurb from "./Components/Blurb";
+import "../src/scss/main.scss"
 import 'bootstrap/dist/css/bootstrap.min.css';
-import ControlledCarousel from "./Components/Carousel";
-import Form from "./Components/Form";
-import Footer from "./Components/Footer";
-import About from "./Components/About";
+import {Route, Routes} from "react-router-dom";
+import Home from "./Components/Home";
+import AboutUsMain from "./Components/AboutUsMain";
+import FormMain from "./Components/FormMain";
 
 function App() {
   return (
-    <div className="App">
-       <DrawerAppBar/>
-        <ControlledCarousel/>
-        <Blurb/>
-        <About/>
-        <Form/>
-        <Footer/>
-    </div>
+
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/about" element={<AboutUsMain />} />
+                <Route path="/contact" element={<FormMain />} />
+            </Routes>
+
   );
 }
 

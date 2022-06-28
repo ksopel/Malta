@@ -11,3 +11,24 @@
 .button:hover{
   background-color: #a3bcd1;
 }
+
+
+.bg__image {
+  background-image: url(../images/bg.jpg);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 10px;
+}
+
+.container__form {
+  background-color: rgba(0, 0, 0, 0.37);
+  border-radius: 12px;
+  margin: auto;
+}
+
+.custom-form {
+  padding-top: 12vh!important;
+  padding-bottom: 12vh!important;
+}
