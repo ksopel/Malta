@@ -10,7 +10,7 @@ function Header() {
     return (
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
             <Container>
-                <Navbar.Brand href="#home"><img alt="logo" width={80} src={logo}/> </Navbar.Brand>
+                <Link className="styleLink" to="/"><img alt="logo" width={80} src={logo}/> </Link>
 
                     <Nav>
                         <Link className="styleLink" to="/">Home</Link>
